@@ -5,6 +5,8 @@ import Bold from "@ckeditor/ckeditor5-basic-styles/src/bold";
 import Italic from "@ckeditor/ckeditor5-basic-styles/src/italic";
 import CKEditorInspector from '@ckeditor/ckeditor5-inspector';
 
+import { MathLiveEditor } from '../src/wysiwyg'
+
 import Math from "../src/math";
 
 ClassicEditor.create(document.querySelector("#editor"), {
@@ -20,3 +22,5 @@ ClassicEditor.create(document.querySelector("#editor"), {
 		console.error(error);
 		console.error(error.stack);
 	});
+
+window.MathLiveEditor = MathLiveEditor;
